@@ -1,0 +1,15 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 900px) {
+	.content-wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+	.content {
+		max-width: 100% !important;
+		text-align: justify;
+		margin-top: 28px;
+	}
+	.right-sidebar span {
+		left: 35% !important;
+	}
+}

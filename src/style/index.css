@@ -1,0 +1,239 @@
+@import '../style/responsive.css';
+
+:root {
+	--gradient-bg: linear-gradient(to right, rgb(9, 46, 214), rgb(90, 154, 250));
+	--gradient-bg-hover: linear-gradient(to left, rgb(9, 46, 214), rgb(90, 154, 250));
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+body {
+	background-color: #d7e5f5;
+}
+/* global  */
+.gradient-button {
+	border: none;
+	padding: 10px 25px;
+	font-size: 16px;
+	background-image: var(--gradient-bg);
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.gradient-button:hover {
+	background-image: var(--gradient-bg-hover);
+}
+.container {
+	max-width: 100%;
+	margin: 0 50px;
+}
+/* header  */
+.header-area {
+	background-color: #7b7c7c;
+	padding: 10px 0;
+}
+.header {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.header-image-wrapper {
+	width: 200px;
+	height: 200px;
+	padding: 10px;
+}
+
+.header-image-wrapper img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	border: 3.5px solid #d7e5f5;
+	object-fit: cover;
+	object-position: center;
+}
+.header .head-title {
+	color: white;
+}
+.header-image-wrapper h1 {
+	font-family: sans-serif;
+	color: #ebebeb;
+	font-size: 52px;
+}
+
+.header-image-wrapper p {
+	color: #ffffff;
+	margin-top: 20px;
+	line-height: 12px;
+}
+/* navbar */
+.navbar {
+	background-color: rgb(235, 229, 229);
+	padding: 5px 0;
+}
+.navbar ul {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.navbar ul li {
+	padding: 10px;
+}
+.navbar ul li a {
+	font-size: 20px;
+}
+/* content area  */
+.main-content {
+}
+.content-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+.content {
+	max-width: 75%;
+	text-align: justify;
+	margin-top: 28px;
+}
+.content h1 {
+	margin-bottom: 12px;
+	font-size: 33px;
+	font-weight: bold;
+	color: #0f1113;
+	font-family: Helvetica;
+}
+.content p {
+	margin-bottom: 40px;
+	font-family: Helvetica;
+	font-size: 18px;
+}
+/* right-sidebar  */
+.right-sidebar {
+	padding: 20px 25px;
+	color: #ffffff;
+	background-color: #7b7c7c;
+	height: max-content;
+	margin: 10px 0;
+	position: relative;
+	transition: ease-in-out 0.5s;
+	width: 100%;
+}
+.right-sidebar .right-sidebar-footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -6px;
+	text-align: center;
+}
+.right-sidebar span {
+	border-radius: 10px;
+	padding: 5px 20px;
+	cursor: pointer;
+	color: white;
+	background-image: var(--gradient-bg);
+}
+.right-sidebar span:hover {
+	background-image: var(--gradient-bg-hover);
+}
+
+.right-sidebar .sidebar-title {
+	text-align: center;
+	font-size: 18px;
+	font-family: sans-serif;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.right-sidebar ul li {
+	text-align: center;
+	padding: 10px 5px;
+	border-radius: 5px;
+	display: none;
+	transition: all 0.7s;
+}
+.right-sidebar ul li.active {
+	display: block !important;
+}
+
+.right-sidebar ul li:first-child {
+	display: block !important;
+}
+.right-sidebar ul li:hover {
+	background-color: #99a1a1;
+}
+.right-sidebar ul li a {
+	font-size: 16px;
+	letter-spacing: 2px;
+}
+
+.audio {
+	margin: auto;
+	font-size: 14px;
+	font-family: sans-serif;
+	text-align: center;
+}
+/* video area  */
+.video-area {
+	margin: 10px 0;
+	background-color: rgb(248, 246, 246);
+	padding: 20px 0;
+}
+.video-area button {
+	margin: 20px auto;
+	display: block;
+}
+.video-area h1 {
+	margin-bottom: 20px;
+}
+.video-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+.video-item {
+	padding: 10px;
+	background-color: rgb(219, 216, 216);
+	border-radius: 5px;
+	width: 400px;
+	height: 250px;
+}
+.video-item iframe {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.quote {
+	font-size: 22px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	margin: auto;
+	border: 1px solid #0d3257;
+	background-color: #0d3257;
+	color: white;
+	max-width: 75%;
+	height: 100px;
+	padding: 20px;
+	box-shadow: 2px 5px 2px 2px #888888;
+}
+.quote-auther {
+	margin-top: 15px;
+	display: block;
+	float: right;
+}
+footer {
+	margin-top: 100px;
+	padding: 20px;
+	border-top: 1px solid #ccc;
+	text-align: center;
+}
