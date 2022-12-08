@@ -12,4 +12,21 @@
 	.right-sidebar span {
 		left: 35% !important;
 	}
+	.header-image-wrapper {
+		width: 150px !important;
+		height: 150px !important;
+		padding: 10px;
+	}
+	.header {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	.header .head-title h1 {
+		font-size: 18px;
+	}
+	.header .head-title p {
+		font-size: 16px;
+	}
 }

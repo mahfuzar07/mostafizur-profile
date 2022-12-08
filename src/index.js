@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import 'bootstrap/js/src/collapse.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../src/style/index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';

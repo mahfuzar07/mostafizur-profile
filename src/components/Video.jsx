@@ -4,11 +4,13 @@ function Video() {
 	return (
 		<div className="video-area">
 			<div className="container">
-				<h1>My Created Video</h1>
+				<div className="section-title">
+					<h1>My Created Video</h1>
+				</div>
 				<div className="video-wrapper">
 					{videoItems.map((item, index) => (
 						<div className="video-item" key={index}>
-							<a href="">
+							<a href="/">
 								<iframe
 									src={item.src}
 									title={item.title}

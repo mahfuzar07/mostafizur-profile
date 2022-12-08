@@ -11,11 +11,8 @@ function Header() {
 						</div>
 						<div className="head-title">
 							<h1>Mostafizur Rahman Sohan</h1>
-							<p>
-								Student &nbsp; | &nbsp; Learner <br />
-								<br />
-								Daffodil International University
-							</p>
+							<p>Student &nbsp; | &nbsp; Learner</p>
+							<p>Daffodil International University</p>
 						</div>
 					</div>
 				</div>
