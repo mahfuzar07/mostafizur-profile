@@ -1,5 +1,6 @@
 import React from 'react';
 import avatar from '../assets/images/1.jpg';
+
 function Header() {
 	return (
 		<div>
@@ -14,6 +15,7 @@ function Header() {
 							<p>Student &nbsp; | &nbsp; Learner</p>
 							<p>Daffodil International University</p>
 						</div>
+
 					</div>
 				</div>
 			</div>

@@ -3,23 +3,6 @@ import { navMenu } from './../data';
 import { Link } from 'react-router-dom';
 function Navbar() {
 	return (
-		// <div>
-		// 	<div className="navbar">
-		// 		<div className="container">
-		// 			<div className="navbar-wrapper">
-		// 				<ul>
-		// 					{navMenu.map((item, index) => (
-		// 						<li key={index}>
-		// 							<Link to={item.src}>
-		// 								<a href="">{item.name}</a>
-		// 							</Link>
-		// 						</li>
-		// 					))}
-		// 				</ul>
-		// 			</div>
-		// 		</div>
-		// 	</div>
-		// </div>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container">
 				<button
@@ -38,7 +21,7 @@ function Navbar() {
 						{navMenu.map((item, index) => (
 							<li className="nav-item" key={index}>
 								<Link to={item.src}>
-									<a classname="nav-link active" href="">
+									<a classname="nav-link active" href={item.src}>
 										{item.name}
 									</a>
 								</Link>

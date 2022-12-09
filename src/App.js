@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Home from '../src/pages/Home.jsx';
 import About from '../src/pages/About';
-import Blog from '../src/pages/Blog';
+import SingleBlog from '../src/pages/SingleBlog';
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
 			<Routes>
 				<Route path="/" element={<Home />}></Route>
 				<Route path="/about" element={<About />}></Route>
-				<Route path="/blog" element={<Blog />}></Route>
+				<Route path="/single-blog/:id" element={<SingleBlog />}></Route>
 			</Routes>
 
 			<Footer />

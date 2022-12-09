@@ -8,16 +8,9 @@ function Home() {
 	return (
 		<div className="content-area">
 			<div className=" container">
-				<div className="home-content row">
-					<div className="col-lg-10">
-						<BlogSection />
-					</div>
-					<div className="col-lg-2">
-						<RightNav />
-					</div>
+				<div className="home-content">
+					<BlogSection />
 				</div>
-
-				{/* <Audio /> */}
 			</div>
 			<Video />
 			<Quote />

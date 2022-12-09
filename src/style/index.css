@@ -133,6 +133,9 @@ body {
 	margin: 10px 0 0 0;
 }
 .blog-short-des {
+	position: relative;
+	max-height: 40px;
+	overflow: hidden;
 	margin: 5px 0;
 	font-size: 14px;
 	color: rgb(110, 107, 107);
@@ -253,4 +256,102 @@ footer {
 	padding: 20px;
 	border-top: 1px solid #ccc;
 	text-align: center;
+}
+.blog-area .Single-blog-area {
+	padding: 10px 0;
+}
+.Single-blog-area .single-blog-image {
+	width: 100%;
+	height: 500px;
+}
+.Single-blog-area .single-blog-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+.single-blog-info .single-blog-author {
+	margin: 10px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: gray;
+}
+.single-blog-info .single-blog-title {
+	font-size: 24px;
+	text-transform: capitalize;
+}
+.single-blog-info .single-blog-des {
+	color: rgb(82, 80, 80);
+	font-size: 16px;
+}
+/* about-wrapper  */
+.about-wrapper {
+	padding: 5px 0;
+}
+.about-wrapper .about-image {
+	padding: 5px;
+	width: 100%;
+	height: 300px;
+}
+.about-wrapper .about-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+.about-wrapper .about-info h5 {
+	color: gray;
+	text-transform: capitalize;
+}
+.about-skills ul {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.about-skills ul li {
+	padding: 5px 10px;
+	background-color: rgb(243, 238, 238);
+	border-radius: 5px;
+	display: block;
+}
+/* about education  */
+.about-Eductaion .about-Eductaion-wrapper {
+	margin: 10px;
+	position: relative;
+}
+.about-Eductaion .about-Eductaion-wrapper::before {
+	position: absolute;
+	content: '';
+	width: 2px;
+	height: 100%;
+	background-color: rgb(0, 119, 255);
+	left: -10px;
+	top: 0;
+}
+.about-Eductaion .about-Eductaion-wrapper .education-title {
+	font-size: 17px;
+	font-weight: 600;
+	position: relative;
+	margin: 10px 0;
+	text-transform: uppercase;
+}
+.about-Eductaion .about-Eductaion-wrapper .education-title::before {
+	position: absolute;
+	content: '';
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: rgb(27, 162, 185);
+	left: -14px;
+	top: 8px;
+}
+.education-title .education-info {
+	margin: 5px 0 0 5px;
+}
+.education-title .education-info li {
+	font-size: 15px;
+	font-weight: 500;
+	color: rgb(85, 84, 84);
+	text-transform: capitalize;
 }

@@ -1,11 +1,12 @@
 import React from 'react';
 import { blogInfo } from '../data';
+import { Link } from 'react-router-dom';
 function BlogSection() {
 	return (
 		<div className="blog-area">
 			<div className="container">
 				<div className="section-title">
-					<h1>My Created Video</h1>
+					<h1>My Blog</h1>
 				</div>
 				<div className="row">
 					{blogInfo.map((item, index) => (
@@ -20,7 +21,9 @@ function BlogSection() {
 								</div>
 								<h1 className="blog-title">{item.title}</h1>
 								<p className="blog-short-des">{item.des}</p>
-								<button className="gradient-button-blog mb-3">See More</button>
+								<Link to={`/single-blog/${item.id}`}>
+									<button className="gradient-button-blog mb-3 mt-2">See More</button>
+								</Link>
 							</div>
 						</div>
 					))}
